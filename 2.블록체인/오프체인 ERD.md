@@ -8,13 +8,15 @@ erDiagram
         string location "사고 발생 위치"
         string accident_status "사고 상태 (예: 조사 중, 해결됨)"
     }
-
+    
     SUBSCRIBER {
         string subscriber_id PK "가입자 고유 ID"
         string name "가입자 이름"
         string contact_info "연락처"
         string insurance_type "보험 종류"
         string subscription_date "가입일"
+        string license_ipfs_hash "운전면허증 해시"
+        string vehicle_registration_ipfs_hash "차량등록증 해시"
     }
 
     INSURANCE_EMPLOYEE {
